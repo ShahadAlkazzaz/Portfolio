@@ -1,0 +1,227 @@
+/* style.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+body {
+    background-color: #F0E1DE; /* Main background color */
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 20px auto;
+}
+
+.navbar {
+    background-color: transparent !important; /* Add !important here */
+}
+
+.navbar-brand {
+    color: #F0E1DE; /* Navigation brand color */
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #549BAD; /* Navigation links color */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #83BDC0; /* Navigation links color on hover */
+}
+
+h1 {
+    color: #549BAD; /* H1 tag color */
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #F0E1DE; /* Footer background color */
+    text-align: center;
+    color: #7F8C8D;
+}
+
+/* Home page */
+
+.header {
+    background-color: #F7C9B6; /* Header background color */
+    padding: 40px;
+    text-align: center;
+}
+
+.textstart {
+    color: #549BAD; /* Text color in header */
+}
+
+.btn {
+    background-color: #83BDC0; /* Button background color */
+    color: #FFF; /* Button text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #549BAD; /* Button background color on hover */
+}
+
+/* Footer component */
+
+.footer {
+    background-color: #F0E1DE; /* Footer background color */
+    padding: 20px;
+    color: #7F8C8D; /* Footer text color */
+    text-align: center;
+}
+
+.footer a {
+    color: #549BAD; /* Link color in footer */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #83BDC0; /* Link color in footer on hover */
+}
+
+/* Category component */
+.form-select {
+    width: 200px; /* Set the width of the dropdown */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #549BAD; /* Border color */
+    background-color: #FFF; /* Background color */
+    color: #000; /* Text color */
+    border-radius: 5px; /* Border radius */
+    outline: none; /* Remove default focus styles */
+    transition: border-color 0.3s ease; /* Add a transition for a smooth effect */
+
+    /* Additional styles for when the dropdown is focused */
+    &:focus {
+        border-color: #83BDC0; /* Border color on focus */
+    }
+}
+
+.card {
+    margin: 10px;
+    background-color: #c0d0d1; /* Card background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card box shadow */
+}
+
+
+
+.card-title a {
+    color: #1287a4 !important; /* Färg för korttitel */
+    text-decoration: none !important; /* Ta bort understrykning */
+}
+
+.card-title a:hover {
+    color: #83BDC0 !important; /* Färg för korttitel på hover */
+}
+
+.card-text {
+    color: #000000; /* Card text color */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+/* Contact page */
+
+.contactContainer {
+    padding: 20px;
+    background-color: #f5bbb0; /* Main background color for contact container */
+    border: 1px solid #549BAD; /* Border color */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    text-align: center; /* Centrera text */
+}
+
+.contactContent {
+    color: #333; /* Text color for contact content */
+    max-width: 600px; /* Max bredd för text */
+    margin: 0 auto; /* Centrera text horisontellt */
+}
+
+.title {
+    color: #549BAD; /* Title color */
+}
+
+.socialLinksContainer {
+    margin-top: 20px;
+    border-top: 1px solid #549BAD; /* Border color for the top of social links */
+    padding-top: 20px; /* Padding for the top of social links */
+}
+
+.socialLink {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.socialLink a {
+    color: #549BAD; /* Link color for social links */
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #549BAD; /* Border color for social links */
+    border-radius: 5px; /* Border radius for social links */
+    padding: 5px 15px; /* Padding for social links */
+    display: flex;
+    align-items: center; /* Centrera ikon och text vertikalt */
+    /* display: inline-block; Visa som en blockelement för att lägga till padding och border */
+    margin-right: 10px; /* Högermarginal mellan sociala länkar */
+    margin-bottom: 10px; /* Bottenmarginal mellan sociala länkar */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Övergångseffekt för färg och bakgrundsfärg */
+}
+
+.socialLink a:hover {
+    color: #FFF; /* Färg för sociala länkar på hover */
+    background-color: #549BAD; /* Bakgrundsfärg för sociala länkar på hover */
+}
+
+
+.socialLink i {
+    margin-right: 5px; /* Högermarginal mellan ikon och text */
+}
+
+/* about page */
+
+.textabout {
+    padding: 20px;
+    background-color: #F5BBB0; /* Main background color for about container */
+    border: 1px solid #549BAD; /* Border color */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.title {
+    color: #549BAD; /* Title color */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.description {
+    color: #333; /* Description text color */
+    font-size: 1.2rem;
+}
+
+.textabout img {
+    margin-top: 20px;
+}
+
+
+/* 404 */
+
+.go-home{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}

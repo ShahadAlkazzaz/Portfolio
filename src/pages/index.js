@@ -1,17 +1,56 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
+import * as React from "react";
+import Layout from "../components/layout";
+import { graphql } from "gatsby";
+import { Link } from "gatsby";
+import { header, btn, textstart } from "../css/style.css";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
+const Home = ({ data }) => {
+  return (
+    <Layout>
+      <section className={`container ${header}`}>
+        <div className="row">
+          <div className="col-md-6">
+            <img
+              src={data.contentfulHome.image.file.url}
+              alt="bild"
+              className="img-fluid"
+            />
+          </div>
+          <div className="col-md-6">
+            <div className={textstart}>
+              <h2 className="title">{data.contentfulHome.title}</h2>
+              <p>
+                {documentToReactComponents(
+                  JSON.parse(data.contentfulHome.info.raw)
+                )}
+              </p>
+              <Link className={`btn btn-primary ${btn}`} to="/category">
+                My projects
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+};
 
-//react-component
-//alla componenter under /src/pages blir automatiskt sidor
-//sidans namn = namnet på javascript-filen (dock - index.js = sajtens första sida)
-const IndexPage = () => (
-  <Layout>
-    <Link to="/portfolio">Se min portfolio</Link>
-  </Layout>
-)
-//denna konstant sätter titeln på sidan
-export const Head = () => <title>Home Page</title>
+export const pageQuery = graphql`
+  query {
+    contentfulHome {
+      title
+      info {
+        raw
+      }
+      image {
+        file {
+          url
+        }
+      }
+    }
+  }
+`;
 
-export default IndexPage;
+export const Head = () => <title>Home</title>;
+export default Home;

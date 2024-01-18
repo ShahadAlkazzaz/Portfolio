@@ -1,0 +1,80 @@
+
+
+/* *{
+margin: 0;
+padding: 0;
+text-decoration: none;
+font-family: "Montserrat";
+color: black;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  background: radial-gradient(at top left, pink, rgb(25, 72, 112) 100%);
+  background-repeat: no-repeat;
+}
+ p {
+  margin: 26px auto;
+  line-height: 1.5em;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav {
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f6f2fa;
+}
+
+nav-links {
+  display: inline-block;
+  text-align: right;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 40px;
+}
+
+nav a {
+  margin-left: 30px;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+}
+nav a:hover {
+  border-color: rgb(224, 121, 201);
+}
+footer p {
+  text-align: center;
+  color: #bbb;
+  margin: 40px auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-link-item {
+  padding-right: 2rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav-link-text {
+  color: rgb(192, 106, 144);
+} */
