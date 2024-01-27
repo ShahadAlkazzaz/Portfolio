@@ -35,7 +35,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       });
     });
   }
-
+// ändring
 //   const filter = result.data.allContentfulBlog.nodes;
 //   if (filter.length > 0) {
 //     filter.forEach((post) => {
